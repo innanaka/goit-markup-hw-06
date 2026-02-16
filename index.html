@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/new-styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <title>WebStudio</title>
 </head>
 
@@ -39,10 +39,15 @@
           </li>
         </ul>
       </address>
+    <button type="button" class="burger-menu" data-menu-open>
+      <svg class="burger-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
     </div>
-    <div class="mobile-menu">
-      <div class="container mobile-menu">
-        <button type="button" class="close-mobile">
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-conteiner">
+        <button type="button" class="close-mobile" data-menu-close>
           <svg class="close-btn-mobile" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -175,7 +180,8 @@
         <ul class="team-list">
           <li class="team-part">
             <div class="card-wrapper">
-              <img src="./images/MarkGuerrero.jpg" width="264" height="260" alt="Photo of Mark Guerrero" />
+              <img src="./images/MarkGuerrero.jpg"
+              srcset="./images/MarkGuerrero.jpg 1x, ./images/MarkGuerrero@2x.jpg 2x" width="264" height="260" alt="Photo of Mark Guerrero" />
               <div class="border-team">
                 <h3 class="team-worker">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -214,7 +220,8 @@
           </li>
           <li class="team-part">
             <div class="card-wrapper">
-              <img src="./images/TomFord.jpg" width="264" height="260" alt="Photo of Tom Ford" />
+              <img src="./images/TomFord.jpg" 
+              srcset="./images/TomFord.jpg 1x, ./images/TomFord@2x.jpg 2x"  width="264" height="260" alt="Photo of Tom Ford" />
               <div class="border-team">
                 <h3 class="team-worker">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -253,7 +260,8 @@
           </li>
           <li class="team-part">
             <div class="card-wrapper">
-              <img src="./images/CamilaGarcia.jpg" width="264" height="260" alt="Photo of Camila Garcia" />
+              <img src="./images/CamilaGarcia.jpg"
+              srcset="./images/CamilaGarcia.jpg 1x, ./images/CamilaGarcia@2x.jpg 2x" width="264" height="260" alt="Photo of Camila Garcia" />
               <div class="border-team">
                 <h3 class="team-worker">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -292,7 +300,8 @@
           </li>
           <li class="team-part">
             <div class="card-wrapper">
-              <img src="./images/DanielWilson.jpg" width="264" height="260" alt="Photo of Daniel Wilson" />
+              <img src="./images/DanielWilson.jpg" 
+              srcset="./images/DanielWilson.jpg 1x, ./images/DanielWilson@2x.jpg 2x" width="264" height="260" alt="Photo of Daniel Wilson" />
               <div class="border-team">
                 <h3 class="team-worker">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -347,7 +356,8 @@
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 · Cloud Storage App
               </p>
-              <img src="./images/BankingApp.jpg" width="360" height="300" alt="Mobile App for Bank"  class="portfolio-img"/>
+              <img src="./images/BankingApp.jpg" 
+              srcset="./images/BankingApp.jpg 1x, ./images/BankingApp@2x.jpg 2x" width="360" height="300" alt="Mobile App for Bank"  class="portfolio-img"/>
             </div>
             <div class="border-portfolio">
               <h3 class="portfolio-title">Banking App</h3>
@@ -361,7 +371,8 @@
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 · Cloud Storage App
               </p>
-              <img src="./images/CashlessPayment.jpg" width="360" height="300"
+              <img src="./images/CashlessPayment.jpg" 
+              srcset="./images/CashlessPayment.jpg 1x, ./images/CashlessPayment@2x.jpg 2x" width="360" height="300"
                 alt="Hand hold a phone and scaned Qr code" class="portfolio-img" />
             </div>
             <div class="border-portfolio">
@@ -376,7 +387,8 @@
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 · Cloud Storage App
               </p>
-              <img src="./images/MeditationApp.jpg" width="360" height="300"
+              <img src="./images/MeditationApp.jpg"
+              srcset="./images/MeditationApp.jpg 1x, ./images/MeditationApp@2x.jpg 2x" width="360" height="300"
                 alt="Laptop and phone opened app Normalcy" class="portfolio-img" />
             </div>
             <div class="border-portfolio">
@@ -391,7 +403,8 @@
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 · Cloud Storage App
               </p>
-              <img src="./images/TaxiService.jpg" width="360" height="300"
+              <img src="./images/TaxiService.jpg" 
+              srcset="./images/TaxiService.jpg 1x, ./images/TaxiService@2x.jpg 2x" width="360" height="300"
                 alt="a man driving a car using GPS navigation be phone" class="portfolio-img" />
             </div>
             <div class="border-portfolio">
@@ -406,7 +419,8 @@
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 · Cloud Storage App
               </p>
-              <img src="./images/ScreenIllustrations.jpg" width="360" height="300"
+              <img src="./images/ScreenIllustrations.jpg" 
+              srcset="./images/ScreenIllustrations.jpg 1x, ./images/ScreenIllustrations@2x.jpg 2x" width="360" height="300"
                 alt="Mobile Phone with different pictures of screen" class="portfolio-img" />
             </div>
             <div class="border-portfolio">
@@ -421,7 +435,8 @@
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                 · Cloud Storage App
               </p>
-              <img src="./images/OnlineCourses.jpg" width="360" height="300"
+              <img src="./images/OnlineCourses.jpg"
+              srcset="./images/OnlineCourses.jpg 1x, ./images/OnlineCourses@2x.jpg 2x" width="360" height="300"
                 alt="Girl with headphones smiling and lookind at phone" class="portfolio-img"/>
             </div>
             <div class="border-portfolio">
@@ -556,6 +571,7 @@
   </div>
   <!-- endregion popup -->
    <script src="./js/modal.js"></script>
+   <script src="./js/menu.js"></script>
 </body>
 
 </html>
