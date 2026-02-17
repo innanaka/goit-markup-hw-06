@@ -45,7 +45,7 @@ img {
 }
 .container {
     max-width: 320px;
-    padding: 0 15px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 @media  screen and (min-width: 768px) {
@@ -54,10 +54,10 @@ img {
     }
 
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        padding: 0 16px;
+        padding: 0 15px;
     }
 }
     
@@ -73,7 +73,6 @@ header {
         0 1px 6px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 2px 1px 0 rgba(46, 47, 66, 0.08);
-    height: 56px;
 }
 .logo {
     margin: 0;
@@ -85,6 +84,7 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-top: 16px;
+    padding-bottom: 16px;
     
 }
 
@@ -95,9 +95,13 @@ header {
 .logo-part-two {
     color: #2e2f42;
 }
-.nav-list, .address-list {
+.nav-list {
     display: none;
 }
+.address-list {
+    display: none;
+}
+
 .burger-menu {
     padding: 0;
     border: none;
@@ -106,7 +110,6 @@ header {
 }
 .burger-icon {
     display: block;
-    margin-top: 16px;
     fill: #2f2f37;
 }
 
@@ -204,9 +207,11 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
-.address-nav-mobile {
-color: #434455;
+.address-nav-email {
+    color: #434455;
 }
+
+.address-nav-mobile
 .address-nav-email {
     color: #4d5ae5;
 }
@@ -230,14 +235,12 @@ color: #434455;
     gap: 40px;
 }
 @media screen and (min-width: 768px) {
-    .header .container {
-        height: 72px;
-    }
     .mobile-menu {
         display: none;
     }
     .logo {
-        padding-top: 15px;
+    padding: 0;
+    padding-top: 24px;
      } 
     .burger-menu {
         display: none;
@@ -247,6 +250,7 @@ color: #434455;
          justify-content: flex-start;
          flex-direction: row;
          gap: 120px;
+         
      }
      .nav-list {
         display: flex;
@@ -254,7 +258,6 @@ color: #434455;
         align-items: center;
         gap: 40px;
         margin: 0;
-        padding-bottom: 24px;
         list-style: none;
     
     }
@@ -287,8 +290,8 @@ color: #434455;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 24px;
+        padding-bottom: 24px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -306,14 +309,14 @@ color: #434455;
         display: flex;
         flex-direction: column;
         list-style: none;
-        gap: 12px;
-            margin: 0;
-            padding-bottom: 16px;
-            padding-left: 122px;
+        gap: 6px;
+        margin: 0 auto;
+        padding-top: 16px;
+        padding-right: 16px;
         }
     
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
     .mobile-menu {
             display: none;
         }
@@ -325,9 +328,12 @@ color: #434455;
         flex-grow: 1;
         }
     .address-list {
+        padding: 0;
+        margin: 0 auto;
         flex-direction: row;
         gap: 40px;
-        padding-top: 12px;
+        padding-top: 24px;
+        
         } 
     .address-nav {
         font-size: 16px;
@@ -435,7 +441,7 @@ h1 {
     }
 
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
 .main-hero {
         height: 660px;
         padding-top: 188px;
@@ -447,7 +453,7 @@ h1 {
     gap: 48px;
 }
 }
-@media screen and (min-width: 1140px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     .main-hero {
         background-image:
                 linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -469,7 +475,7 @@ padding-bottom: 96px;
     row-gap: 72px;
     list-style: none;
 }
-.icon-features {
+.conteiner-features {
     display: none;
 }
 .text-features {
@@ -505,7 +511,7 @@ h3 {
     }
 
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
     .features,
     .team,
     .portfolio {
@@ -652,7 +658,7 @@ h2 {
         padding-bottom: 72px;
     }
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
     .team-list {
         display: flex;
         flex-wrap: wrap;
@@ -786,7 +792,7 @@ h2 {
           height: 300px;
     }
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1158px) {
     .grid-list {
         column-gap: 24px;
         row-gap: 48px;
@@ -898,7 +904,7 @@ h2 {
 }
 
 .input-email {
-    width: 288px;
+    width: 264px;
     border: 1px solid #fff;
     border-radius: 4px;
     height: 40px;
@@ -997,13 +1003,14 @@ h2 {
     flex-direction: row;
     gap: 24px;
 }
-
+.input-email {
+    width: 288px;
 }
-@media screen and (min-width: 1140px) {
+}
+@media screen and (min-width: 1158px) {
     .footer {
         height: 312px;
         padding: 0;
-        
     }
     .conteiner-logo-link {
         gap: 120px;
