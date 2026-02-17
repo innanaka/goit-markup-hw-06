@@ -333,7 +333,6 @@ letter-spacing: 0.02em;
         list-style: none;
         gap: 12px;
         margin: 0 auto;
-        padding-top: 16px;
         padding-right: 16px;
         }
     
@@ -477,7 +476,7 @@ h1 {
     }
 .main-hero .container {
     gap: 48px;
-    max-width: 1158px;
+    max-width: 1440px;
 }
 
 }
@@ -639,9 +638,13 @@ h2 {
 .team-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 72px;
     padding-top: 72px;
-    padding-left: 13px;
+    flex-wrap: wrap;
+    max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
 }
 .social-links {
     display: flex;
@@ -828,6 +831,7 @@ h2 {
     } 
     .portfolio-part {
           height: 420px;
+          box-shadow: none;
     }
     .portfolio-part:hover {
     
